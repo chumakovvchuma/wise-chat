@@ -1,7 +1,6 @@
-// @ts-nocheck
 import mongoose from 'mongoose';
 
-const chatCredentialSchema = mongoose.Schema({
+const chatCredentialSchema= mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     name: {
         type: String,
