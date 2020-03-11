@@ -8,7 +8,7 @@ import signUpRoutes from "./api/routes/signUp";
 
 const app = express();
 
-mongoose.connect('mongodb+srv://' + process.env.MONGO_ATLAS_USERNAME + ':' + process.env.MONGO_ATLAS_PW + '@cluster0-irwax.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }).then(() => {
+mongoose.connect('mongodb+srv://' + process.env.MONGO_ATLAS_USERNAME + ':' + process.env.MONGO_ATLAS_PW + '@mern-rxmjv.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true }).then(() => {
     console.log("MongoDB server connected !!!!!");
 }).catch((err) => {
     console.log("Error : " + err);
