@@ -47,7 +47,7 @@ class LoginPage extends Component {
             password:password
           };
         if(email && password){
-          axios.post("https://wise-chat.herokuapp.com/signIn",  user )
+          axios.post("https://blooming-dusk-33325.herokuapp.com/signIn",  user )
             .then(res => {
               console.log(res);
               console.log(res.data);

@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
@@ -161,7 +160,7 @@ class ChatPage extends Component{
       }
     }
     componentDidMount(){ 
-      const endpoint = "https://wise-chat.herokuapp.com/";
+      const endpoint = "https://blooming-dusk-33325.herokuapp.com/";
       const socket = socketIOClient(endpoint,{
       query:'username='+localStorage.getItem('username')+'&uid='+localStorage.getItem('uid')});
       console.log("socket",socket)

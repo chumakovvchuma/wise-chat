@@ -1,4 +1,3 @@
-// @ts-nocheck
 import http from 'http';
 import app from './app';
 import socketIo from "socket.io";

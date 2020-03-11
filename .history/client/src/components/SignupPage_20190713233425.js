@@ -80,7 +80,7 @@ class SignupPage extends React.Component {
          }, () => console.log(this.state.newUser)
          )
          
-        axios.get(`https://wise-chat.herokuapp.com/users/${value}`)
+        axios.get(`https://blooming-dusk-33325.herokuapp.com/users/${value}`)
         .then(res => {
           console.log(res); 
           if(res.data.message==="User exists"){
@@ -113,7 +113,7 @@ class SignupPage extends React.Component {
         console.log(username,name,email,password,this.state.usernameAvailable,this.state.validEmail)
         if(username && name && email && password ){
           if(this.state.usernameAvailable && this.state.validEmail){
-            axios.post(`https://wise-chat.herokuapp.com/signUp`,  user )
+            axios.post(`https://blooming-dusk-33325.herokuapp.com/signUp`,  user )
             .then(res => {
             console.log(res);
             console.log(res.data);            
